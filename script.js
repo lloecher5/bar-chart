@@ -88,7 +88,7 @@ chart.selectAll()
   .attr('height', s=> height - yScale(s.value))
   .attr('width', xScale.bandwidth())
   .on('mouseover', function(actual, i) {
-    d3.select(this).attr('opacity', 0.7)
+    d3.select(this).attr('opacity', 0.5)
   })
   .on('mouseout', function() {
     d3.select(this).attr('opacity', 1)
